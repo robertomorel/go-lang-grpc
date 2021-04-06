@@ -4,7 +4,7 @@ package pb;
 // Gera um pacote interno no padrão pb (Protocol Buffer)
 option go_package = ".;pb";
 
-// Arquivo do protofile, ou seja, arquivo que define meu "contrato"
+// Arquivo do protofile, ou seja, arquivo que define o "contrato"
 message User {
   string id = 1;
   string name = 2;
