@@ -1,0 +1,18 @@
+syntax = "proto3";
+package pb;
+
+// Gera um pacote interno no padrão pb (Protocol Buffer)
+option go_package = ".;pb";
+
+// Arquivo do protofile, ou seja, arquivo que define meu "contrato"
+message User {
+  string id = 1;
+  string name = 2;
+  string email = 3;
+}
+
+// Serviço para trabalhar com o RPC
+service UserService {
+  // Criando um serviço do RPC com uma função AddUser
+  rpc AddUser (User) returns (User);
+}
