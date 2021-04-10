@@ -17,3 +17,15 @@ go install google.golang.org/protobuf/cmd/protoc-gen-go google.golang.org/grpc/c
 
 go get google.golang.org/grpc/cmd/protoc-gen-go-grpc
 go install google.golang.org/grpc/cmd/protoc-gen-go-grpc
+
+
+-- Evans Client --
+Settando o service: service UserService
+Chamando o serviço: call AddUser
+Informa os dados do endpoint
+Retorno:
+{
+  "id": "123",
+  "name": "Roberto",
+  "email": "r.morel@email.com"
+}
