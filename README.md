@@ -1,7 +1,7 @@
 # Golang for gRPC
 
 ## About
-gRPC is a Google´s framework which facilitates the communication process between systems in a way extremely fast, lite, language independently
+gRPC is a Google´s framework which facilitates the communication process between systems in a way extremely fast, lite and language independently
 
 - Remote Procedure Call
   - It´s a call of functions from a Client to a Server
