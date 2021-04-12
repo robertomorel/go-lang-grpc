@@ -1,3 +1,5 @@
+// Run: go run cmd/server/server.go
+
 package main
 
 import (

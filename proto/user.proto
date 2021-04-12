@@ -11,8 +11,26 @@ message User {
   string email = 3;
 }
 
+// Para exemplo de streaming com RPC (server streaming)
+message UserResultStream {
+  string status = 1;
+  User user = 2;
+} 
+
+// Para exemplo de streaming com RPC (client streaming)
+message Users {
+  // Coleção de usuários
+  repeated User user = 1;
+} 
+
 // Serviço para trabalhar com o RPC
 service UserService {
   // Criando um serviço do RPC com uma função AddUser
-  rpc AddUser (User) returns (User);
+  rpc AddUser (User) returns (User); //Formato "unary"
+  // Criando um serviço do RPC com uma função AddUserVerbose
+  rpc AddUserVerbose (User) returns (stream UserResultStream); //Formato "Server streaming"
+  // Criando um serviço do RPC com uma função AddUsers
+  rpc AddUsers (stream User) returns (Users); //Formato "Client streaming"
+  // Criando um serviço do RPC com uma função AddUserStreamBoth
+  rpc AddUserStreamBoth (stream User) returns (stream UserResultStream); //Formato "Bi-direcional streaming"
 }

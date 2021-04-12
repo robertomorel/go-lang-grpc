@@ -29,3 +29,8 @@ Retorno:
   "name": "Roberto",
   "email": "r.morel@email.com"
 }
+
+
+Devemos rodar este comando sempre que o "proto/*" mudar
+protoc --proto_path=proto proto/*.proto --go_out=pb
+protoc --proto_path=proto proto/*.proto --go_out=pb --go-grpc_out=pb
