@@ -59,7 +59,7 @@ message SearchRequest {
 - Client <=> Server [Request in streaming x Response in streaming]
 
 ## How to run
-You must have Goleng environment in your machine, and than run:
+You must have Golang environment in your machine, and than run:
 ```bash
 # Clone project
 git clone https://github.com/robertomorel/go-lang-grpc.git
