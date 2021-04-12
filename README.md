@@ -58,6 +58,22 @@ message SearchRequest {
 ### "Bi-direcional streaming" format
 - Client <=> Server [Request in streaming x Response in streaming]
 
+## How to run
+You must have Goleng environment in your machine, and than run:
+```bash
+# Clone project
+git clone https://github.com/robertomorel/go-lang-grpc.git
+
+# Enter in the project folder
+cd ./go-lang-grpc
+
+# Run Server
+go run cmd/server/server.go
+
+# Run Client
+go run cmd/client/client.go
+```
+
 ------
 
 ## Lets talk
