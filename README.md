@@ -46,7 +46,7 @@ message SearchRequest {
 ```
 
 ## API
-### "unary" format
+### "Unary" format
 - Client  <=>  Server [Request x Response]
   
 ### "Server streaming" format
