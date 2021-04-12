@@ -33,7 +33,7 @@ It´s a neutral language from Google, which has mechanisms to serialization and 
 - Binaries files (serialization) are always lighter than JSON files
 - Less resources used
 - Faster processes
-- File example
+- File example:
 
 ```bash
 syntax = "proto3"
