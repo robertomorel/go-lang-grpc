@@ -13,7 +13,7 @@ gRPC is a Google´s framework which facilitates the communication process betwee
 - Ideal for micro-services
 - Mobile, browsers and backend
 - Automatic library generator
-- Bidirectional streaming using HPPT/2
+- Bidirectional streaming using HTTP/2
 
 ### Support
 - Java
